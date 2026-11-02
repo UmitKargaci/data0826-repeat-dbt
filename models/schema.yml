@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: dbt_data0826_repeat
+    description: raw data for cc parcel tracking
+    tables:
+      - name: parcel
+        identifier: raw_cc_parcel
+        description: details of each parcel for an order
+        columns:
+          - name: Parcel_id
+            description: unique id of the parcel
+            tests:
+              - unique
+              - not_null
+          - name: Date_purCHase
+            description: purchase date of the order
+            tests:
+              - not_null    
+              
