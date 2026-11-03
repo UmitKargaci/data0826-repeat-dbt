@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  
+  - name: cc_parcel
+    description: product details in each parsel 
