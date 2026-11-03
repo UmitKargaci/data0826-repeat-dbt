@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  
+  - name: cc_parcel
+    description: product details in each parsel 
+  - name: cc_parcel_product
+    description: each product in a parcel
