@@ -18,4 +18,15 @@ sources:
             description: purchase date of the order
             tests:
               - not_null    
-              
+
+      - name: parcel_product
+        identifier: raw_cc_parcel_product
+        description: details of each parcel for an order
+        columns:
+          - name: ParCEL_id
+            description: unique id of the parcel
+            tests:
+              - unique:
+                  arguments: 
+                    column_name: "ParCEL_id || '-' || Model_mAME"
+                           
